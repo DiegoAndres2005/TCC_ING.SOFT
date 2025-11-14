@@ -10,23 +10,23 @@ Diseño y desarrollo de un sistema de gestión de inventario mediante una API RE
 
 Integrantes del CIPA:
 
-⦁	Yair Bravo Palomino 
-⦁	Luis Alejandro Martinez Polo
-⦁	Heiner Jose Morales Alvarado 
-⦁	Diego Andres Martinez Conde
+  ⦁	Yair Bravo Palomino 
+  ⦁	Luis Alejandro Martinez Polo
+  ⦁	Heiner Jose Morales Alvarado 
+  ⦁	Diego Andres Martinez Conde
 
 
 Tutor:
-Pedro Jose Consuegra Cañarete
+ Pedro Jose Consuegra Cañarete
 
 
 
 Asignatura:
-Ingeniería de Software
+ Ingeniería de Software
 
 
 Fecha de entrega:
-13/11/2025
+ 13/11/2025
  
 1.	Descripción del Proyecto
 
@@ -43,14 +43,13 @@ Situación problemática actual
 En esta tienda el inventario se controla con apuntes manuales y hojas de cálculo. Esto genera errores constantes, pérdida de tiempo y datos desactualizados. Cuando el dueño quiere saber cuánto stock tiene o qué productos están por agotarse, tiene que revisar todo manualmente, lo que retrasa las decisiones y hace que se pierdan ventas.
 A continuación, se resumen las principales problemáticas detectadas:
 
-1.	Control manual del inventario: El dueño usa cuadernos y hojas de Excel. Esto causa errores humanos, pérdida de información y diferencias entre lo que hay físicamente y lo que aparece en los registros.
-2.	Desconocimiento del stock en tiempo real: No se puede saber con precisión qué productos hay disponibles o cuáles están por acabarse, lo que provoca que el cliente pida un producto que “parece” estar disponible, pero no lo está.
- 
-3.	Productos vencidos: Al no tener control automatizado de fechas, se pierden productos por vencimiento, causando pérdidas entre $200.000 y $300.000 mensuales.
-4.	Falta de análisis de ventas: No se identifican los productos más vendidos ni los de baja rotación. Esto afecta las decisiones sobre qué surtir o qué dejar de comprar.
-5.	Gestión ineficiente de proveedores: No hay registros organizados de las compras realizadas, ni comparación de precios o historial de proveedores.
-6.	Conteos físicos largos: Se necesitan entre 8 y 10 horas para hacer un conteo total de los productos, y aun así se cometen errores.
-7.	Dificultad para crecer: Sin un sistema digital, el negocio no puede abrir otra sucursal ni delegar responsabilidades sin perder control.
+  1.	Control manual del inventario: El dueño usa cuadernos y hojas de Excel. Esto causa errores humanos, pérdida de información y diferencias entre lo que hay físicamente y lo que aparece en los registros.
+  2.	Desconocimiento del stock en tiempo real: No se puede saber con precisión qué productos hay disponibles o cuáles están por acabarse, lo que provoca que el cliente pida un producto que “parece” estar disponible, pero no lo está.
+  3.	Productos vencidos: Al no tener control automatizado de fechas, se pierden productos por vencimiento, causando pérdidas entre $200.000 y $300.000 mensuales.
+  4.	Falta de análisis de ventas: No se identifican los productos más vendidos ni los de baja rotación. Esto afecta las decisiones sobre qué surtir o qué dejar de comprar.
+  5.	Gestión ineficiente de proveedores: No hay registros organizados de las compras realizadas, ni comparación de precios o historial de proveedores.
+  6.	Conteos físicos largos: Se necesitan entre 8 y 10 horas para hacer un conteo total de los productos, y aun así se cometen errores.
+  7.	Dificultad para crecer: Sin un sistema digital, el negocio no puede abrir otra sucursal ni delegar responsabilidades sin perder control.
 
 
 
@@ -64,15 +63,11 @@ Además, el sistema debe ser fácil de usar, accesible desde un computador o tab
 Viabilidad del proyecto
 
 El sistema es completamente viable porque:
-●	El negocio ya cuenta con un computador.
-
-●	Los empleados tienen conocimientos básicos en tecnología.
-
-●	El costo de desarrollo es bajo.
- 
-●	No requiere modificar la forma en que trabaja la tienda, solo digitalizarla.
-
-●	El retorno de inversión se calcula entre 3 y 6 meses.
+  ●	El negocio ya cuenta con un computador.
+  ●	Los empleados tienen conocimientos básicos en tecnología.
+  ●	El costo de desarrollo es bajo.
+  ●	No requiere modificar la forma en que trabaja la tienda, solo digitalizarla.
+  ●	El retorno de inversión se calcula entre 3 y 6 meses.
 
 
 Justificación social y económica
@@ -111,14 +106,14 @@ Justificación técnica
 
 El desarrollo aplica los conocimientos aprendidos en la asignatura, como:
 
-●	Arquitectura en capas (Controller, Service, Repository)
-●	Uso del framework Spring Boot
-●	Principios SOLID y Clean Code
-●	Metodología ágil Scrum
-●	Pruebas unitarias con JUnit
-●	Persistencia con JPA/Hibernate
-●	Despliegue en Docker
-●	Control de versiones con GitHub
+   ●	Arquitectura en capas (Controller, Service, Repository)
+   ●	Uso del framework Spring Boot
+   ●	Principios SOLID y Clean Code
+   ●	Metodología ágil Scrum
+   ●	Pruebas unitarias con JUnit
+   ●	Persistencia con JPA/Hibernate
+   ●	Despliegue en Docker
+   ●	Control de versiones con GitHub
 
 Justificación económica
 
@@ -131,40 +126,40 @@ El proyecto mejora la calidad de vida del propietario al reducir su carga de tra
 Desde el punto de vista académico, el proyecto permite aplicar de forma práctica lo aprendido y demuestra la capacidad del grupo para resolver problemas reales con la ingeniería de software.
 
 4.	Elicitación y Requisitos del Sistema Técnicas de elicitación
-●	Entrevista con el propietario.
-●	Observación directa del trabajo diario.
-●	Revisión de los cuadernos y registros actuales.
-●	Análisis de necesidades de control de stock, compras y ventas.
+  ●	Entrevista con el propietario.
+  ●	Observación directa del trabajo diario.
+  ●	Revisión de los cuadernos y registros actuales.
+  ●	Análisis de necesidades de control de stock, compras y ventas.
 
 
 Requisitos funcionales principales
-●	CRUD completo de productos, categorías, proveedores y ventas.
-●	Control de entradas, salidas y ajustes de inventario.
-●	Generación automática de alertas por stock bajo o productos próximos a vencer.
-●	Reportes de ventas y análisis de productos de alta o baja rotación.
-●	Gestión de órdenes de compra a proveedores.
-●	Cálculo automático de márgenes de ganancia.
+  ●	CRUD completo de productos, categorías, proveedores y ventas.
+  ●	Control de entradas, salidas y ajustes de inventario.
+  ●	Generación automática de alertas por stock bajo o productos próximos a vencer.
+  ●	Reportes de ventas y análisis de productos de alta o baja rotación.
+  ●	Gestión de órdenes de compra a proveedores.
+  ●	Cálculo automático de márgenes de ganancia.
  
 Requisitos no funcionales
-●	Respuesta rápida (menos de 2 segundos en consultas).
-●	Seguridad de datos con variables de entorno y validaciones.
-●	Código limpio y mantenible.
-●	Arquitectura escalable y portable con Docker.
-●	Compatibilidad multiplataforma (Windows/Linux).
-●	Documentación y pruebas completas en Postman.
+  ●	Respuesta rápida (menos de 2 segundos en consultas).
+  ●	Seguridad de datos con variables de entorno y validaciones.
+  ●	Código limpio y mantenible.
+  ●	Arquitectura escalable y portable con Docker.
+  ●	Compatibilidad multiplataforma (Windows/Linux).
+  ●	Documentación y pruebas completas en una interfaz.
 
 
 
 
 5.	Reglas de Negocio
 
-1.	No se pueden registrar productos duplicados.
-2.	El precio de venta siempre debe ser mayor que el de compra.
-3.	El stock nunca puede ser negativo.
-4.	Los movimientos de inventario no se eliminan, solo se ajustan.
-5.	Las ventas no pueden registrarse sin stock suficiente.
-6.	Los proveedores deben tener un NIT único.
-7.	Las órdenes de compra solo se pueden cerrar si todos los productos fueron recibidos.
+  1.	No se pueden registrar productos duplicados.
+  2.	El precio de venta siempre debe ser mayor que el de compra.
+  3.	El stock nunca puede ser negativo.
+  4.	Los movimientos de inventario no se eliminan, solo se ajustan.
+  5.	Las ventas no pueden registrarse sin stock suficiente.
+  6.	Los proveedores deben tener un NIT único.
+  7.	Las órdenes de compra solo se pueden cerrar si todos los productos fueron recibidos.
 
 
 6.	Diseño Arquitectónico del Proyecto
@@ -184,6 +179,16 @@ A continuación, se presentan los principales diagramas del sistema desarrollado
 a.	Diagrama de Casos de Uso
 
 <img width="433" height="1211" alt="image" src="https://github.com/user-attachments/assets/56fa0961-0518-4733-b5ef-0e5f5ca47c9c" />
+
+Este diagrama representa las funcionalidades principales disponibles para el usuario dentro del sistema de gestión de inventario y ventas. Organiza las acciones en cinco módulos clave:
+
+  ⦁	Interfaz y Navegación: permite mostrar mensajes y moverse entre secciones.
+  ⦁	Estadísticas: ofrece visualización de estadísticas de ventas.
+  ⦁	Ventas: incluye registro de ventas y consulta del historial.
+  ⦁	Proveedores: gestiona la creación, edición, eliminación y visualización de proveedores.
+  ⦁	Inventario: permite agregar, editar, eliminar y consultar artículos.
+
+El usuario tiene acceso directo a todas estas funciones, lo que refleja una interfaz centralizada y amigable para la gestión operativa del negocio.
 
  
 b.	Diagrama Entidad–Relación (ERD)
