@@ -1,4 +1,4 @@
-<img width="955" height="369" alt="image" src="https://github.com/user-attachments/assets/f3132f3e-8d51-4fbe-8d36-029ab898325a" /># TRABAJO COLABORATIVO CONTEXTUALIZADO – INGENIERÍA DE SOFTWARE
+# TRABAJO COLABORATIVO CONTEXTUALIZADO – INGENIERÍA DE SOFTWARE
 
 
 **Título del Proyecto:
@@ -222,12 +222,12 @@ Se utilizó la metodología Scrum, que permite trabajar por sprints y entregar a
     - Scrum Master: Luis.
     -	Development Team: Yair, Diego.
 -	Stacks:
-    -	IDEs: VScode.
+    -	IDEs: VScode, IntelliJ IDEA.
     -	Lenguajes:
     -	Frontend:
       -	`HTML` `CSS` `JavaScript` .
     - Backend:
-      - `Java`
+      - `Java` + **Sprint Boot**
     -	Incremento: Funcionalidad entregable.
 -	Eventos Scrum:
     - Sprint Planning, Daily Scrum, Review y Retrospective.
