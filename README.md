@@ -10,9 +10,10 @@ Diseño y desarrollo de un sistema de gestión de inventario mediante una API RE
 
 Integrantes del CIPA:
 
-
-Yair Bravo Palomino Luis Alejandro Martinez Polo Heiner Jose Morales Alvarado Diego Andres Martinez Conde
-
+⦁	Yair Bravo Palomino 
+⦁	Luis Alejandro Martinez Polo
+⦁	Heiner Jose Morales Alvarado 
+⦁	Diego Andres Martinez Conde
 
 
 Tutor:
@@ -182,11 +183,17 @@ A continuación, se presentan los principales diagramas del sistema desarrollado
 
 a.	Diagrama de Casos de Uso
 
+<img width="433" height="1211" alt="image" src="https://github.com/user-attachments/assets/56fa0961-0518-4733-b5ef-0e5f5ca47c9c" />
+
  
 b.	Diagrama Entidad–Relación (ERD)
 
+<img width="544" height="448" alt="image" src="https://github.com/user-attachments/assets/fafb1dd9-30c5-421f-9a70-47cd01097fe4" />
+
  
 c.	Diagrama de componentes
+
+<img width="835" height="759" alt="image" src="https://github.com/user-attachments/assets/cd0a2c28-8a6f-452b-955e-7d356ded2f4d" />
 
  
 d.	Diagrama de Despliegue
