@@ -1,0 +1,79 @@
+/*
+ * Archivo de Estilos Personalizados para el Sistema de Inventario
+ * Utiliza clases de Tailwind donde es posible, pero agrega estilos
+ * específicos para la fuente y la barra lateral (sidebar).
+ */
+
+/* Importación de la fuente Inter (aunque ya se hace en index.html) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------------------------------------------- */
+/* LAYOUT PRINCIPAL Y SIDEBAR */
+/* ---------------------------------------------------- */
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Definición de la barra lateral base y transiciones */
+#sidebar {
+  transition: all 300ms ease-in-out;
+  /* Ancho base para que el botón de menú sea visible */
+  width: 6rem;
+  min-width: 6rem;
+  max-width: 256px;
+}
+
+/* Clase para cuando la barra lateral está completamente abierta (w-64 = 16rem) */
+#sidebar.open {
+  width: 16rem;
+  min-width: 16rem;
+  padding-right: 1.5rem; /* p-6 */
+}
+
+/* Clase para cuando la barra lateral está colapsada (w-24 = 6rem) */
+#sidebar.collapsed {
+  width: 6rem;
+  min-width: 6rem;
+  padding-right: 0.5rem; /* p-2 */
+}
+
+/* Ocultar el contenido de texto (enlaces/logo) cuando está colapsado */
+#sidebarContent {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out 100ms;
+}
+
+#sidebar.collapsed #sidebarContent {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100ms ease-in-out;
+}
+
+/* ---------------------------------------------------- */
+/* ESTILOS DE COMPONENTES */
+/* ---------------------------------------------------- */
+
+/* Estilo para la navegación activa */
+.nav-link.active {
+  background-color: #4f46e5; /* indigo-600 */
+  color: white;
+}
+
+/* Estilo para las filas de la tabla con stock bajo */
+.table-item-low-stock {
+  background-color: #fef2f2; /* red-50 */
+}
+
+/* Estilos leves para la sección de estadísticas */
+.stats-card-title {
+  font-size: 0.9rem;
+  color: #374151; /* gray-700 */
+}
