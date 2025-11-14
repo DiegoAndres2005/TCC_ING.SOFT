@@ -266,11 +266,10 @@ El sistema propuesto no solo ayuda al dueño de la tienda “El Buen Vecino”, 
 
 # **Bibliografía**
 
-- Sommerville, I. (2016). Ingeniería de Software (10ª ed.). Pearson.
+-   Sommerville, I. (2016). Ingeniería de Software (10ª ed.). Pearson.
 -	Schwaber, K., & Sutherland, J. (2020). The Scrum Guide: The Definitive Guide to Scrum.
 -	Martin, R. C. (2008). Clean Code: A Handbook of Agile Software Craftsmanship. Prentice Hall.
 -	Spring.io (2025). Spring Boot Documentation. https://spring.io/projects/spring-boot
 -	MySQL	Documentation	(2025).	MySQL	Reference	Manual. https://dev.mysql.com/doc/
 -	Docker Inc. (2025). Docker Overview. https://docs.docker.com
--	GitHub Inc. (2025). Repositorio del Proyecto: Sistema de Gestión de Inventario "El Buen Vecino". Recuperado de: [Pegar aquí enlace al repositorio GitHub]
 -	PlantUML (2025). Herramienta para la creación de diagramas UML mediante código. Dispon
